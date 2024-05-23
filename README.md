@@ -2,8 +2,6 @@
 
 # Textboard
 
-``` Group 2 
-```  Progress 1 done ^^ 
-``` I'm in Branch Logic
-
-
+``` Group 2
+```  Progress 2 done ^^
+``` yayyyy ><
