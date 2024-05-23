@@ -58,6 +58,8 @@ body {
   width: 250px;
   border-radius: 10px;
   font-size: 20px;
+  border: 1px solid black;
+  text-align: center;
   /* border-style: var(--orange-color); */
 }
 .btn-generate {
@@ -177,7 +179,12 @@ position: absolute;
   gap: 1rem;
 }
 .myTextColorBar {
-  width: 100px;
+  width: 110px;
+  height: 3px;
+  background-color: white;
+}
+.myTextColorBarF {
+  width: 50px;
   height: 3px;
   background-color: white;
 }
@@ -197,4 +204,25 @@ position: absolute;
   height: 30px;
   background-color: var(--graybackground);
   border: none;
+  /* background-color: #1e1c16; */
+ 
 }
+
+
+/* Remove the border */
+.textColorPicker input[type="color"] {
+  border: none;
+}
+
+/* Adjust the appearance of the color picker */
+.textColorPicker input[type="color"] {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  padding: 0; /* Remove the default padding */
+  background-color: transparent; /* Set the background color */
+  border-radius: 4px; /* Set the border radius */
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+
+
+
