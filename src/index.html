@@ -67,7 +67,7 @@
               <div class="textColorPicker"><input type="color" /></div>
             </div>
           </div>
-          <div class="basic">Basis Style</div>
+          <div class="basic">Basic Style</div>
         </div>
 
         <div class="advance-style">
@@ -78,79 +78,83 @@
                 <div class="myTextColorBar"></div>
               </div>
               <div class="selector">
-                <select id="font-selector">
-                  <option value="Arial">Arial</option>
+                <select id="animation-selector">
+                  <option value="Normal">Normal</option>
                   <!-- class , id -->
-                  <option value="Verdana">Verdana</option>
-                  <option value="Tahoma">Tahoma</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Wave">Wave</option>
+                  <option value="Wipe">Wipe</option>
+                  <option value="Drift">Drift</option>
+                  <option value="Skate">Drift</option>
+                  <option value="Flick">Drift</option>
+
+                  <option value="Burst">Burst</option>
                 </select>
               </div>
             </div>
 
             <div class="text-animation-section">
               <div class="text-color-des">
-                <div class="myTextColor">Animation</div>
-                <div class="myTextColorBar"></div>
+                <div class="speedWrapper">
+                  <div class="myTextColor">Speed:</div>
+                  <div id="speedValue" class="speedValue">3</div>
+                </div>
+                <div class="mySpeedBar"></div>
               </div>
-              <div class="selector">
-                <select id="font-selector">
-                  <option value="Arial">Arial</option>
-                  <!-- class , id -->
-                  <option value="Verdana">Verdana</option>
-                  <option value="Tahoma">Tahoma</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Times New Roman">Times New Roman</option>
-                </select>
+              <div class="selector-speed">
+                <span>1</span>
+                <input
+                  class="speed-indicator"
+                  type="range"
+                  id="speed"
+                  name="speed"
+                  min="1"
+                  max="10"
+                  oninput="updateVolumeValue()" />
+                <span>10</span>
               </div>
             </div>
 
             <div class="text-animation-section">
               <div class="text-color-des">
-                <div class="myTextColor">Animation</div>
-                <div class="myTextColorBar"></div>
+                <div class="myFrameStyle">Frame Style</div>
+                <div class="myFramerBar"></div>
               </div>
               <div class="selector">
-                <select id="font-selector">
-                  <option value="Arial">Arial</option>
+                <select id="frame-selector">
+                  <option value="Dash">Dash</option>
                   <!-- class , id -->
-                  <option value="Verdana">Verdana</option>
-                  <option value="Tahoma">Tahoma</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Solid">Solid</option>
+                  <option value="Inset">Inset</option>
+                  <option value="Double">Double</option>
+                  <option value="Outset">Outset</option>
                 </select>
               </div>
             </div>
             <div class="text-animation-section">
               <div class="text-color-des">
-                <div class="myTextColor">Animation</div>
-                <div class="myTextColorBar"></div>
+                <div class="myTextColor">Frame Color</div>
+                <div class="myFrameColorBar"></div>
               </div>
               <div class="selector">
-                <select id="font-selector">
-                  <option value="Arial">Arial</option>
+                <select id="frame-color-selector">
+                  <option value="Gold">Gold</option>
                   <!-- class , id -->
-                  <option value="Verdana">Verdana</option>
-                  <option value="Tahoma">Tahoma</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Silvar">Silvar</option>
+                  <option value="Green">Nature</option>
                 </select>
               </div>
             </div>
             <div class="text-animation-section">
               <div class="text-color-des">
-                <div class="myTextColor">Animation</div>
+                <div class="myTextColor">Text Style</div>
                 <div class="myTextColorBar"></div>
               </div>
               <div class="selector">
-                <select id="font-selector">
-                  <option value="Arial">Arial</option>
+                <select id="text-style-selector">
+                  <option value="Normal">Normal</option>
                   <!-- class , id -->
-                  <option value="Verdana">Verdana</option>
-                  <option value="Tahoma">Tahoma</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Burning">Burning</option>
+                  <option value="Frozen">Frozen</option>
                 </select>
               </div>
             </div>
@@ -161,5 +165,16 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script>
+      function updateVolumeValue() {
+        const speed = document.getElementById("speed").value;
+        document.getElementById("speedValue").innerText = speed;
+      }
+
+      // Optionally, set an initial value on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        updateVolumeValue();
+      });
+    </script>
   </body>
 </html>
