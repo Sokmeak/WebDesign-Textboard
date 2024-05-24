@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="content" class="container">
+      <!-- <div class="heroSection"> -->
       <div class="header">
         <div class="title">Welcome To Text Board</div>
         <div class="bar"></div>
@@ -32,10 +33,11 @@
       </div>
 
       <div class="styleYourText">Style Your Text Here</div>
+      <!-- </div>s -->
       <div class="styling">
         <div class="basic-style">
           <div class="basic-wrapper">
-            <div class="text-color-section">
+            <div class="item text-color-section">
               <div class="text-color-des">
                 <div class="myTextColor">Text Color</div>
                 <div class="myTextColorBar"></div>
@@ -43,23 +45,25 @@
               <div class="textColorPicker"><input type="color" /></div>
             </div>
 
-            <div class="text-color-section">
+            <div class="item text-color-section">
               <div class="text-color-des">
                 <div class="myTextColor">Text Size</div>
                 <div class="myTextColorBar"></div>
               </div>
 
-              <input type="number" id="font-selector" value="55" />
- 
-          
+              <input
+                type="number"
+                id="fontSize-selector"
+                class="font"
+                value="55" />
             </div>
 
-            <div class="text-color-section">
+            <div class="item text-color-section">
               <div class="text-color-des">
                 <div class="myTextColor">Fonts</div>
                 <div class="myTextColorBarF"></div>
               </div>
-              
+
               <div class="selector">
                 <select id="font-selector">
                   <option value="Arial">Arial</option>
@@ -75,7 +79,7 @@
               </div>
             </div>
 
-            <div class="text-color-section">
+            <div class="item text-color-section">
               <div class="text-color-des">
                 <div class="myTextColor">Background</div>
                 <div class="myTextColorBar"></div>
@@ -88,7 +92,7 @@
 
         <div class="advance-style">
           <div class="advance-wrapper">
-            <div class="text-animation-section">
+            <div class="text-animation-section item1">
               <div class="text-color-des">
                 <div class="myTextColor">Animation</div>
                 <div class="myTextColorBar"></div>
@@ -108,7 +112,7 @@
               </div>
             </div>
 
-            <div class="text-animation-section">
+            <div class="text-animation-section item2">
               <div class="text-color-des">
                 <div class="speedWrapper">
                   <div class="myTextColor">Speed:</div>
@@ -130,7 +134,7 @@
               </div>
             </div>
 
-            <div class="text-animation-section">
+            <div class="text-animation-section item3">
               <div class="text-color-des">
                 <div class="myFrameStyle">Frame Style</div>
                 <div class="myFramerBar"></div>
@@ -146,7 +150,7 @@
                 </select>
               </div>
             </div>
-            <div class="text-animation-section">
+            <div class="text-animation-section frameColorDiv item-l">
               <div class="text-color-des">
                 <div class="myTextColor">Frame Color</div>
                 <div class="myFrameColorBar"></div>
@@ -160,7 +164,7 @@
                 </select>
               </div>
             </div>
-            <div class="text-animation-section">
+            <div class="text-animation-section textStyleDiv">
               <div class="text-color-des">
                 <div class="myTextColor">Text Style</div>
                 <div class="myTextColorBar"></div>
@@ -190,6 +194,19 @@
       // Optionally, set an initial value on page load
       document.addEventListener("DOMContentLoaded", () => {
         updateVolumeValue();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const generateButton = document.querySelector("button");
+        const content = document.querySelector("#content");
+
+        generateButton.addEventListener("click", function () {
+          content.style.display = "none";
+        });
+
+        document.addEventListener("dblclick", function () {
+          content.style.display = "block";
+        });
       });
     </script>
   </body>
