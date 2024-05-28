@@ -11,7 +11,6 @@
   </head>
   <body>
     <div id="content" class="container">
-      <!-- <div class="heroSection"> -->
       <div class="header">
         <div class="title">Welcome To Text Board</div>
         <div class="bar"></div>
@@ -22,6 +21,7 @@
           <input
             class="input"
             type="text"
+            id="inputText"
             style="border: 1px solid black"
             placeholder="Input your text here" />
         </div>
@@ -33,7 +33,7 @@
       </div>
 
       <div class="styleYourText">Style Your Text Here</div>
-      <!-- </div>s -->
+
       <div class="styling">
         <div class="basic-style">
           <div class="basic-wrapper">
@@ -42,15 +42,16 @@
                 <div class="myTextColor">Text Color</div>
                 <div class="myTextColorBar"></div>
               </div>
-              <div class="textColorPicker"><input type="color" /></div>
+              <div class="textColorPicker">
+                <input type="color" id="textColorPicker" />
+              </div>
             </div>
 
-            <div class="item text-color-section">
-              <div class="text-color-des">
+            <div class="item text-size-section">
+              <div class="text-size-des">
                 <div class="myTextColor">Text Size</div>
                 <div class="myTextColorBar"></div>
               </div>
-
               <input
                 type="number"
                 id="fontSize-selector"
@@ -58,16 +59,14 @@
                 value="55" />
             </div>
 
-            <div class="item text-color-section">
-              <div class="text-color-des">
+            <div class="item text-font-section">
+              <div class="text-font-des">
                 <div class="myTextColor">Fonts</div>
                 <div class="myTextColorBarF"></div>
               </div>
-
-              <div class="selector">
+              <div class="selector font">
                 <select id="font-selector">
                   <option value="Arial">Arial</option>
-                  <!-- class , id -->
                   <option value="Verdana">Verdana</option>
                   <option value="Tahoma">Tahoma</option>
                   <option value="Georgia">Georgia</option>
@@ -79,12 +78,14 @@
               </div>
             </div>
 
-            <div class="item text-color-section">
-              <div class="text-color-des">
+            <div class="item background-section">
+              <div class="text-background-des">
                 <div class="myTextColor">Background</div>
                 <div class="myTextColorBar"></div>
               </div>
-              <div class="textColorPicker"><input type="color" /></div>
+              <div class="textColorPicker">
+                <input type="color" id="backgroundColorPicker" />
+              </div>
             </div>
           </div>
           <div class="basic">Basic Style</div>
@@ -100,19 +101,17 @@
               <div class="selector">
                 <select id="animation-selector">
                   <option value="Normal">Normal</option>
-                  <!-- class , id -->
                   <option value="Wave">Wave</option>
                   <option value="Wipe">Wipe</option>
                   <option value="Drift">Drift</option>
                   <option value="Skate">Drift</option>
                   <option value="Flick">Drift</option>
-
                   <option value="Burst">Burst</option>
                 </select>
               </div>
             </div>
 
-            <div class="text-animation-section item2">
+            <div class="text-animation-speed-section item2">
               <div class="text-color-des">
                 <div class="speedWrapper">
                   <div class="myTextColor">Speed:</div>
@@ -129,20 +128,19 @@
                   name="speed"
                   min="1"
                   max="10"
-                  oninput="updateVolumeValue()" />
+                  oninput="updateSpeedValue()" />
                 <span>10</span>
               </div>
             </div>
 
-            <div class="text-animation-section item3">
-              <div class="text-color-des">
+            <div class="frame-style-section item3">
+              <div class="frame-color-des">
                 <div class="myFrameStyle">Frame Style</div>
                 <div class="myFramerBar"></div>
               </div>
               <div class="selector">
                 <select id="frame-selector">
                   <option value="Dash">Dash</option>
-                  <!-- class , id -->
                   <option value="Solid">Solid</option>
                   <option value="Inset">Inset</option>
                   <option value="Double">Double</option>
@@ -150,64 +148,37 @@
                 </select>
               </div>
             </div>
-            <div class="text-animation-section frameColorDiv item-l">
-              <div class="text-color-des">
+            <div class="frame-color-section frameColorDiv item-l">
+              <div class="frame-color-des">
                 <div class="myTextColor">Frame Color</div>
                 <div class="myFrameColorBar"></div>
               </div>
               <div class="selector">
                 <select id="frame-color-selector">
                   <option value="Gold">Gold</option>
-                  <!-- class , id -->
                   <option value="Silvar">Silvar</option>
                   <option value="Green">Nature</option>
                 </select>
               </div>
             </div>
-            <div class="text-animation-section textStyleDiv">
+            <div class="text-style-section textStyleDiv">
               <div class="text-color-des">
                 <div class="myTextColor">Text Style</div>
                 <div class="myTextColorBar"></div>
               </div>
-              <div class="selector">
+              <div class="selector text style">
                 <select id="text-style-selector">
                   <option value="Normal">Normal</option>
-                  <!-- class , id -->
                   <option value="Burning">Burning</option>
                   <option value="Frozen">Frozen</option>
                 </select>
               </div>
             </div>
           </div>
-
           <div class="advance">Advance Style</div>
         </div>
       </div>
     </div>
     <script src="script.js"></script>
-    <script>
-      function updateVolumeValue() {
-        const speed = document.getElementById("speed").value;
-        document.getElementById("speedValue").innerText = speed;
-      }
-
-      // Optionally, set an initial value on page load
-      document.addEventListener("DOMContentLoaded", () => {
-        updateVolumeValue();
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const generateButton = document.querySelector("button");
-        const content = document.querySelector("#content");
-
-        generateButton.addEventListener("click", function () {
-          content.style.display = "none";
-        });
-
-        document.addEventListener("dblclick", function () {
-          content.style.display = "block";
-        });
-      });
-    </script>
   </body>
 </html>
