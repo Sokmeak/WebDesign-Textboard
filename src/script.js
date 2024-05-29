@@ -131,8 +131,77 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("dblclick", function () {
-    
     document.body.removeChild(elemDiv);
-    content.style.display = "block";
+    content.style.display = "flex";
   });
 });
+
+// function updateSpeedValue() {
+//   const speed = document.getElementById("speed").value;
+//   document.getElementById("speedValue").innerText = speed;
+// }
+
+// var elemDiv = document.createElement("canvas");
+// elemDiv.id = "c";
+// var body = document.getElementsByTagName("body")[0];
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   updateSpeedValue();
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const generateButton = document.querySelector("button");
+//   const content = document.querySelector("#content");
+
+//   generateButton.addEventListener("click", function () {
+//     content.style.display = "none";
+//     const myText = document.getElementById("inputText").value;
+
+//     document.body.appendChild(elemDiv);
+//     // for display
+
+//     (function () {
+//       "use strict";
+
+//       var c = document.getElementById("c");
+//       var ctx = c.getContext("2d");
+//       var w = (c.width = window.innerWidth);
+//       var h = (c.height = window.innerHeight);
+
+//       var textX = w; // start at the right edge
+//       var speed = document.getElementById("speed").value;
+
+//       function drawText() {
+//         ctx.clearRect(0, 0, w, h); // clear the canvas
+//         ctx.font = "140px Verdana";
+//         ctx.textAlign = "center";
+//         ctx.textBaseline = "middle";
+//         ctx.fillText(myText, textX, h / 2); // draw the text
+//       }
+
+//       function update() {
+//         speed = document.getElementById("speed").value; // get updated speed
+//         textX -= speed; // move text to the left
+
+//         if (textX < -ctx.measureText(myText).width) {
+//           textX = w; // reset text position when it goes off screen
+//         }
+//       }
+
+//       function loop() {
+//         update();
+//         drawText();
+//         requestAnimationFrame(loop);
+//       }
+
+//       loop(); // start the animation
+
+//       document.addEventListener("dblclick", function () {
+//         document.body.removeChild(elemDiv);
+//         content.style.display = "block";
+//       });
+//     })();
+//   });
+// });
+
+// document.getElementById("speed").addEventListener("input", updateSpeedValue);
