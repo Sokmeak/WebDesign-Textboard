@@ -12,6 +12,52 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik+Moonrocks);
 @import url(https://fonts.googleapis.com/css2?family=Workbench);
 
+
+:root {
+  --orange-color: #edb005;
+  --graybackground: #1e1c16;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  color: var(--orange-color);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+}
 .Jacquard {
   font-family: "Jacquard 12", system-ui;
   font-weight: 400;
@@ -85,50 +131,67 @@
     "SCAN" 0;
 }
 
-:root {
-  --orange-color: #edb005;
-  --graybackground: #1e1c16;
+
+/* Letter font */
+#Arial {
+  font-family: Arial, Helvetica, sans-serif;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+#Jersey25 {
+  font-family: "Jersey 25 Charted";
+}
+#pacifico {
+ font-family: "Pacifico", cursive;
+}
+#poetsen-one {
+  font-family: "Poetsen One", sans-serif;
+}
+#dancing-script {
+  font-family: "Dancing Script", cursive;
+}
+#lobster {
+  font-family: "Lobster", sans-serif;
+}
+#audiowide {
+  font-family: "Audiowide", sans-serif;
+}
+#jersey-15 {
+  font-family: "Jersey 15", sans-serif;
+}
+#rubik-moonrocks {
+  font-family: "Rubik Moonrocks", sans-serif;
+}
+#workbrench {
+  font-family: "Workbench", sans-serif;
+}
+#jacquard {
+  font-family: "Jacquard 12", system-ui;
+}
+#sevillana {
+  font-family: "Sevillana", cursive;
+}
+#danfo {
+  font-family: "Danfo", serif;
+}
+#Verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Tohoma {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Georgia {
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Times-New-Romen {
+  font-family: 'Times New Roman', Times, serif;
+}
+#Serif {
   font-family: serif;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
-
-.container {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+#Brush-Script-MT {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-.header {
-  width: 100%;
-  height: 60px;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.1rem;
-  color: var(--orange-color);
-
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  font-size: 40px;
+#Cooper-Black {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .bar {
@@ -407,7 +470,7 @@ body {
 }
 #fontSize-selector {
   font-size: 25px;
-  width: 50px;
+  width: 70px;
   height: 30px;
 }
 
