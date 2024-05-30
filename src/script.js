@@ -58,10 +58,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const textColor = document.getElementById("textColorPicker").value;
     const frame = document.getElementById("frame-selector").value;
+    const frameColorSelected = document.getElementById(
+      "frame-color-selector"
+    ).value;
     const fontSize = document.getElementById("fontSize-selector").value;
     let backGround = document.getElementById("backgroundColorPicker").value;
 
-    const myFramecolor = "#edb005";
+    var myFramecolor = "";
+
+    if (frameColorSelected == "Gold") {
+      myFramecolor = "#fac123";
+    } else if (frameColorSelected == "Silvar") {
+      myFramecolor = "#C0C0C0";
+    } else if (frameColorSelected == "Nature") {
+      myFramecolor = "#2ECA52";
+    }
+    // const myFramecolor = "#edb005";
     canvas.style.border = `10px ${frame} ${myFramecolor}`;
     canvas.style.background = backGround;
     canvas.width = window.innerWidth - 20;
@@ -93,23 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
       ctx.clearRect(0, 0, w, h); // Clear the canvas
       ctx.fillText(myText, xPos, h / 2); // Draw the text
 
-      // draw in gradient color
-      // Move the text to the left based on speed
-
-      // let gradient = ctx.createLinearGradient(0, 0, w, 0);
-      // gradient.addColorStop(0, "red");
-      // gradient.addColorStop(0.5, "orange");
-      // gradient.addColorStop(1, "yellow");
-
       ctx.fillStyle = textColor;
       ctx.fillText(myText, xPos, h / 2); // Draw the text
 
-      // Flicker effect by randomly changing the gradient
-      // if (Math.random() > 0.9) {
-      //   gradient.addColorStop(0, "orange");
-      //   gradient.addColorStop(0.5, "yellow");
-      //   gradient.addColorStop(1, "white");
-      // }
       xPos -= speed;
 
       if (xPos + ctx.measureText(myText).width < 0) {

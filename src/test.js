@@ -38,7 +38,7 @@ function updateSpeedValue() {
       else if (myfont === "pacifico") {
         myfont = "'Pacifico', cursive";
       }
-      if (myfont === "poetsen-one") {
+      else if (myfont === "poetsen-one") {
         myfont = "'Poetsen One', sans-serif";
       } 
      else if (myfont === "dancing-script") {
