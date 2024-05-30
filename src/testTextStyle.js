@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       // Draw initial text
-      ctx.font = "140px Arial";
+      ctx.font = " " + fontSize + "px " + myfont;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(myText, w / 2, h / 2 + 50);
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Create particles
-      var ctr = 900;
+      var ctr = 10000;
       var ps = [];
       for (var i = 0; i < ctr; i++) {
         var lc = loc[Math.floor(Math.random() * loc.length)];

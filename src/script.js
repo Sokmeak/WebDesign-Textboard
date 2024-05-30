@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ctx.fillStyle = textColor;
     ctx.textAlign = "left";
-    ctx.baseline = "middle";
+    ctx.textBaseline = "middle";
 
     // ctx.font = "bold 40px serif "
     // ctx.fillText(myText, w / 2, h / 2);

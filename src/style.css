@@ -12,7 +12,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik+Moonrocks);
 @import url(https://fonts.googleapis.com/css2?family=Workbench);
 
-
 :root {
   --orange-color: #edb005;
   --graybackground: #1e1c16;
@@ -74,8 +73,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "ELSH" 0;
+  font-variation-settings: "ELSH" 0;
 }
 
 .jersey25 {
@@ -121,16 +119,13 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.workbench{
+.workbench {
   font-family: "Workbench", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
 }
-
 
 /* Letter font */
 #Arial {
@@ -140,7 +135,7 @@ body {
   font-family: "Jersey 25 Charted";
 }
 #pacifico {
- font-family: "Pacifico", cursive;
+  font-family: "Pacifico", cursive;
 }
 #poetsen-one {
   font-family: "Poetsen One", sans-serif;
@@ -176,22 +171,23 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #Tohoma {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #Georgia {
-font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #Times-New-Romen {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 #Serif {
   font-family: serif;
 }
 #Brush-Script-MT {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #Cooper-Black {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .bar {
@@ -222,7 +218,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   border: 1px solid black;
 
   text-align: center;
-  
+
   /* border-style: var(--orange-color); */
 }
 .btn-generate {
@@ -385,7 +381,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: var(--graybackground);
   border: none;
 }
-
 
 #animation-selector {
   color: white;
