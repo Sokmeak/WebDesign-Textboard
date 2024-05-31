@@ -11,79 +11,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Jersey+15);
 @import url(https://fonts.googleapis.com/css2?family=Rubik+Moonrocks);
 @import url(https://fonts.googleapis.com/css2?family=Workbench);
-
-.Jacquard {
-  font-family: "Jacquard 12", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.Sevillana {
-  font-family: "Sevillana", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.danfo {
-  font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "ELSH" 0;
-}
-
-.jersey25 {
-  font-family: "Jersey 25 Charted", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.pacifico {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poetsen-one {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.dancing-script {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.lobster {
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.audiowide {
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.jersey-15 {
-  font-family: "Jersey 15", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.rubik-moonrocks {
-  font-family: "Rubik Moonrocks", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.workbench{
-  font-family: "Workbench", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
-}
+@import url(https://fonts.googleapis.com/css2?family=Monofett);
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax);
 
 :root {
   --orange-color: #edb005;
@@ -130,6 +59,160 @@ body {
 .title {
   font-size: 40px;
 }
+.Jacquard {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.Sevillana {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.danfo {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
+}
+
+.jersey25 {
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poetsen-one {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.lobster {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.audiowide {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-15 {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-moonrocks {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.workbench {
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+}
+.jacquard-12 {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.monofett {
+  font-family: "Monofett", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-broken-fax {
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Letter font */
+#rubik-broken-fax {
+  font-family: "Rubik Broken Fax", system-ui;
+}
+#Monofett {
+  font-family: "Monofett", monospace;
+}
+#Arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#Jersey25 {
+  font-family: "Jersey 25 Charted";
+}
+#pacifico {
+  font-family: "Pacifico", cursive;
+}
+#poetsen-one {
+  font-family: "Poetsen One", sans-serif;
+}
+#dancing-script {
+  font-family: "Dancing Script", cursive;
+}
+#lobster {
+  font-family: "Lobster", sans-serif;
+}
+#audiowide {
+  font-family: "Audiowide", sans-serif;
+}
+#jersey-15 {
+  font-family: "Jersey 15", sans-serif;
+}
+#rubik-moonrocks {
+  font-family: "Rubik Moonrocks", sans-serif;
+}
+#workbrench {
+  font-family: "Workbench", sans-serif;
+}
+#jacquard {
+  font-family: "Jacquard 12", system-ui;
+}
+#sevillana {
+  font-family: "Sevillana", cursive;
+}
+#danfo {
+  font-family: "Danfo", serif;
+}
+#Verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Tohoma {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#Georgia {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#Times-New-Romen {
+  font-family: "Times New Roman", Times, serif;
+}
+#Serif {
+  font-family: serif;
+}
+#Brush-Script-MT {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#Cooper-Black {
+  font-family: "Courier New", Courier, monospace;
+}
 
 .bar {
   width: 400px;
@@ -159,7 +242,7 @@ body {
   border: 1px solid black;
 
   text-align: center;
-  
+
   /* border-style: var(--orange-color); */
 }
 .btn-generate {
@@ -323,7 +406,6 @@ body {
   border: none;
 }
 
-
 #animation-selector {
   color: white;
   font-size: 20px;
@@ -407,7 +489,7 @@ body {
 }
 #fontSize-selector {
   font-size: 25px;
-  width: 50px;
+  width: 70px;
   height: 30px;
 }
 
@@ -482,4 +564,5 @@ body {
   #c {
     display: none;
   }
+
 }
