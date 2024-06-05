@@ -29,7 +29,7 @@ function generateCanvasContent() {
       document.body.appendChild(canvas);
     }
 
-    const textStle = document.getElementById("text-style-selector").value;
+    const textStle = document.getElementById("text-color-style-selector").value;
 
     const myFont = getSelectedFont();
     const myText = document.getElementById("inputText").value;
@@ -90,9 +90,11 @@ function generateCanvasContent() {
     if (animationId) {
       cancelAnimationFrame(animationId);
     }
-
-    content.style.display = "flex";
+    //canvasNode = document.getElementById("c");
+    canvas = document.getElementById("c");
     document.body.removeChild(canvas);
+    content.style.display = "flex";
+
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
   });
 }
