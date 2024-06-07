@@ -11,6 +11,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Jersey+15);
 @import url(https://fonts.googleapis.com/css2?family=Rubik+Moonrocks);
 @import url(https://fonts.googleapis.com/css2?family=Workbench);
+@import url(https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer);
+@import url(https://fonts.googleapis.com/css2?family=Bayon);
+@import url(https://fonts.googleapis.com/css2?family=Siemreap);
 
 :root {
   --orange-color: #edb005;
@@ -129,6 +133,30 @@ body {
   font-style: normal;
   font-variation-settings: "BLED" 0, "SCAN" 0;
 }
+.konkhmer-sleokchher-V {
+  font-family: "Konkhmer Sleokchher", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-serif-khmer {
+  font-family: "Noto Serif Khmer", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.bayon {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.siemreap {
+  font-family: "Siemreap", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /* Letter font */
 #Arial {
@@ -191,6 +219,18 @@ body {
 }
 #Cooper-Black {
   font-family: "Courier New", Courier, monospace;
+}
+#Konkhmer-sleokchher {
+  font-family: "Konkhmer Sleokchher", system-ui;
+}
+#noto-serif {
+  font-family: "Noto Serif Khmer", serif;
+}
+#Bayon {
+  font-family: "Bayon", sans-serif;
+}
+#Siemreap {
+  font-family: "Siemreap", sans-serif;
 }
 
 .bar {

@@ -124,8 +124,10 @@ function generateCanvasContent() {
     canvas = document.getElementById("c");
     document.body.removeChild(canvas);
     content.style.display = "flex";
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+    if(canvas){
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas just incase it exist
+    }
+    
   });
 }
 
@@ -158,6 +160,14 @@ function getSelectedFont() {
       return "'Rubik Moonrocks', cursive";
     case "workbench":
       return "'Workbench', cursive";
+    case "konkhmer-sleokchher-V":
+      return "'Konkhmer Sleokchher', system-ui";
+    case "noto-serif-khmer":
+      return "'Noto Serif Khmer', serif";
+    case "bayon":
+      return "'Bayon', sans-serif";
+    case "siemreap":
+      return "'Siemreap', sans-serif";
     default:
       return myFont;
   }
